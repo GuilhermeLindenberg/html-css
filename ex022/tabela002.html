@@ -7,12 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        
         table{
+            position: relative;
             width: 500px;
             border-collapse: collapse;
         }
         body{
             font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        tbody > tr:nth-child(2n){
+            background-color: gray;
+            color: rgb(224, 213, 213);
         }
         td, th{
             border: 1px solid black;
@@ -29,13 +36,21 @@
             background-color: gray;
             color: white;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
     </style>
 </head>
 
 <body>
     <h1>Uso de Tabelas Grandes</h1>
-    <table>
 
+    
+
+    <table>
+        <caption> População das unidades Federativas</caption>
         <thead>
             <tr>
                 <th>Estado</th>
